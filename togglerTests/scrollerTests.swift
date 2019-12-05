@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import scroller
+@testable import toggler
 
 class scrollerTests: XCTestCase {
 
