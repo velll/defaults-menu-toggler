@@ -12,12 +12,14 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     let statusItem = NSStatusBar.system.statusItem(withLength:NSStatusItem.squareLength)
-
+    
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Insert code here to initialize your application
+        let toggler = Toggler.app
+        
         if let button = statusItem.button {
-          button.image = NSImage(named:NSImage.Name("mouse-solid-32"))
-          button.action = #selector(printQuote(_:))
+            button.image = toggler.getImage()
+            button.action = #selector(click(_:))
+            toggler.registerButton(btn: button)
         }
     }
 
@@ -25,12 +27,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Insert code here to tear down your application
     }
     
-    @objc func printQuote(_ sender: Any?) {
-      let quoteText = "Never put off until tomorrow what you can do the day after tomorrow."
-      let quoteAuthor = "Mark Twain"
-      
-      print("\(quoteText) — \(quoteAuthor)")
+    @objc func click(_ sender: Any?) {
+        Toggler.app.flipState()
     }
-
 }
 
