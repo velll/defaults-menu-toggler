@@ -30,6 +30,7 @@
 /* Begin PBXFileReference section */
 		DA862F6223D78569005857AB /* Toggler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toggler.swift; sourceTree = "<group>"; };
 		DA862F6423D79750005857AB /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		DA862F6823D7A4D2005857AB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DA9B2C0C2397E5030048716B /* defaults-toggler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "defaults-toggler.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA9B2C0F2397E5030048716B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA9B2C132397E5050048716B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -63,6 +64,7 @@
 		DA9B2C032397E5030048716B = {
 			isa = PBXGroup;
 			children = (
+				DA862F6823D7A4D2005857AB /* README.md */,
 				DA9B2C0E2397E5030048716B /* toggler */,
 				DA9B2C212397E5050048716B /* togglerTests */,
 				DA9B2C0D2397E5030048716B /* Products */,
